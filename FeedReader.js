@@ -13,9 +13,9 @@ userFeedURLs.forEach(userUrl => {
                 var content = document.getElementById('content');
 
                 var newItem = "";
-                newItem += "<div class=\"container\" id=\"item\"><a href=\"" + item.link + "\"><h1>" + item.title + "</h1></a>" + "<h4> from " + data.feed.title + "</h4>";
+                newItem += "<div class=\"container\" id=\"item\"><a href=\"" + item.link + "\"><h2>" + item.title + "</h2></a>" + "<h4> from " + data.feed.title + "</h4>";
                 if (item.author != "")
-                    newItem += "<h4> By " + item.author + "</h4>";
+                    newItem += "<h5> By " + item.author + "</h5>";
 
                 newItem += "<h4>Published Date: " + item.pubDate + "</h4>";
 
